@@ -1,0 +1,30 @@
+import time
+import pyautogui
+import subprocess
+
+# Function to open Roblox Studio (8V DOES NOT LINE WITH XXS LINES)
+def open_roblox_studio():
+    subprocess.Popen(['path_to_your_roblox_studio_executable'])
+    time.sleep(10)  # Wait for Roblox Studio to open
+
+# Function to type Lua code and run it
+def execute_lua_code(code):
+    # You need to handle focus on Roblox Studio
+    pyautogui.click(x=100, y=100)  # Coordinates should be adjusted to your screen
+    pyautogui.typewrite(code)
+    pyautogui.press('enter')
+    time.sleep(2)  # Wait for execution
+
+# Example Lua code to run in Roblox Studio
+lua_code = '''
+print("Countdown starts")
+for i = 5, 1, -1 do
+    print("Countdown: " .. i)
+    wait(1)
+end
+print("Countdown finished!")
+'''
+
+# Open Roblox Studio and execute Lua code
+open_roblox_studio()
+execute_lua_code(lua_code)
