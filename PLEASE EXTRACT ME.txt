@@ -1,0 +1,1 @@
+Extract all XXC files, takes about 1 - 3 minutes to get it workin, tell me if you need help with it cuz its in alpha. Aight have fun :)
