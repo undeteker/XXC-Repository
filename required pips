@@ -1,0 +1,3 @@
+pip install opencv-python-headless numpy sounddevice requests scipy tkinter
+pip install selenium pyautogui
+pip install selenium webdriver-manager
